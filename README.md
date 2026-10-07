@@ -40,28 +40,10 @@ Yue Ma<sup>1</sup>, Pengjie Song<sup>2</sup>, Xinyu Wang<sup>3</sup>, Yi He<sup>
 
 </details>
 
-## 📀 Demo Video
-
-<!-- TODO: Add demo video link -->
-<!-- https://github.com/user-attachments/assets/placeholder -->
 
 ## 📋 Changelog
 
-- 2026.XX.XX Initial release
-
-## 🚧 Todo
-
-- [ ] Add more examples and demo videos
-- [ ] Add support with CPU-offload to support low VRAM GPUs
-
-## ✨ Features
-
-- **Attention Motion Flow (AMF)**: Transfers motion patterns from reference videos by masking self-attention to local neighborhoods, avoiding unnecessary long-range interaction weights for small, smooth frame-to-frame motion
-- **Velocity-guided Structure Anchoring (VSA)**: Stabilizes hand-object structure during early denoising by aligning the generation trajectory with a reference velocity anchor at the same noise level
-- **Sparse Correspondence Calibration (SCC)**: Refines local temporal correspondences in mid-to-late denoising stages via sparse top-k cross-frame matching, improving interaction realism
-- **Efficient Tile-based AMF**: Optimized computation with reduced memory usage while maintaining accuracy
-- **Flexible Transfer Methods**: Support for `egoact` (default) and `no_transfer` modes
-- **VRAM Management**: Built-in CPU offload strategies for running on consumer GPUs
+- 2026.10.07 Initial release
 
 ## 🛡 Setup Environment
 
@@ -224,7 +206,7 @@ EgoACT/
 │   ├── wan_14b_text_to_video.py # CLI entry point (14B model)
 │   ├── wan_1.3b_text_to_video.py # CLI entry point (1.3B model)
 │   └── download_model.py       # Model downloader
-├── docs/                        # Technical documentation
+├── docs/                        # GitHub Pages project page
 ├── models/                      # Model checkpoints (not tracked)
 ├── data/                        # Reference videos (not tracked)
 ├── requirements.txt            # Dependencies
@@ -238,6 +220,17 @@ EgoACT/
 If you use this code, please cite:
 
 ```bibtex
+@article{ma2026egoact,
+  title={Decoupling Action from Egocentric Observation for World Simulation},
+  author={Ma, Yue and Song, Pengjie and Wang, Xinyu and He, Yi and Long, Zeqian and Zhan, Fangneng and Zhou, Kaichen and Liu, Hongyu and Wang, Hongfa and Li, Peihao and Huang, Haoyang and Duan, Nan and Chen, Qifeng},
+  journal={NeurIPS},
+  year={2026}
+}
+```
+
+<details><summary>Related work (FastVMT)</summary>
+
+```bibtex
 @article{ma2025fastvmt,
   title={FastVMT: Eliminating Redundancy in Video Motion Transfer},
   author={Ma, Yue and Wang, Zhikai and Ren, Tianhao and Zheng, Mingzhe and Liu, Hongyu and Guo, Jiayi and Feng, Kunyu and Xue, Yuxuan and Zhao, Zixiang and Schindler, Konrad and Chen, Qifeng and Zhang, Linfeng},
@@ -246,17 +239,7 @@ If you use this code, please cite:
 }
 ```
 
-<!-- TODO: Add EgoACT citation when available -->
-<!--
-```bibtex
-@article{placeholder2026egoact,
-  title={Decoupling Action from Egocentric Observation for World Simulation},
-  author={Ma, Yue and Song, Pengjie and Wang, Xinyu and He, Yi and Long, Zeqian and Zhan, Fangneng and Zhou, Kaichen and Liu, Hongyu and Wang, Hongfa and Li, Peihao and Huang, Haoyang and Duan, Nan and Chen, Qifeng},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-```
--->
+</details>
 
 ## 📜 License
 
