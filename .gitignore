@@ -224,4 +224,6 @@ results/
 
 # large media
 *.mp4
+# allow videos in project page
+!docs/**/*.mp4
 

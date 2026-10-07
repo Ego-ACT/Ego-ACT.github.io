@@ -2,16 +2,19 @@
 <div align="center">
 <h2> EgoACT: Decoupling Action from Egocentric Observation for World Simulation</h2>
 
-<!-- TODO: Replace with actual author names and URLs -->
-[Author 1](placeholder_url), [Author 2](placeholder_url), [Author 3](placeholder_url)
+Yue Ma<sup>1</sup>, Pengjie Song<sup>2</sup>, Xinyu Wang<sup>3</sup>, Yi He<sup>3</sup>, Zeqian Long<sup>4</sup>, Fangneng Zhan<sup>1</sup>, Kaichen Zhou<sup>5</sup>, Hongyu Liu<sup>1</sup>, Hongfa Wang<sup>3</sup>, Peihao Li<sup>6</sup>, Haoyang Huang<sup>7</sup>, Nan Duan<sup>7</sup>, Qifeng Chen<sup>1&dagger;</sup>
+
+<sup>1</sup>Hong Kong University of Science and Technology &nbsp; <sup>2</sup>Hunan University &nbsp; <sup>3</sup>Tsinghua University &nbsp; <sup>4</sup>Stanford University &nbsp; <sup>5</sup>Massachusetts Institute of Technology &nbsp; <sup>6</sup>Tongyi Lab, Alibaba Group &nbsp; <sup>7</sup>JD Explore Academy
+
+<sup>&dagger;</sup>Corresponding author
 
 
 <a href='placeholder_arxiv_url'><img src='https://img.shields.io/badge/ArXiv-XXXX.XXXXX-red'></a>
-<a href='placeholder_project_page_url'>
+<a href='https://jie-ser.github.io/EgoACT/'>
   <img src='https://img.shields.io/badge/Project-Page-Green'>
 </a>
 <!-- TODO: Replace with actual GitHub repo URL -->
-[![GitHub](https://img.shields.io/github/stars/placeholder/EgoACT?style=social)](https://github.com/placeholder/EgoACT)
+[![GitHub](https://img.shields.io/github/stars/Jie-ser/EgoACT?style=social)](https://github.com/Jie-ser/EgoACT)
 
 </div>
 
@@ -29,12 +32,11 @@
 
 ## 🎏 Abstract
 
-<!-- TODO: Replace with actual abstract -->
 <b>TL; DR: <font color="red">EgoACT</font> decouples transferable action semantics from egocentric observations, enabling realistic action transfer for world simulation.</b>
 
 <details><summary>CLICK for the full abstract</summary>
 
-> Placeholder: Full abstract to be added.
+> Egocentric action transfer aims to decouple the semantic action from egocentric observations and reproduce them in new visual contexts, enabling scalable world simulation, embodied policy learning, and robotic data generation. Existing approaches to transferring actions rely on condition-guided video generation, which converts the observation video into explicit geometric controls (e.g., hand poses or meshes) to drive synthesis. However, these methods introduce geometric estimation errors, making it difficult to preserve physically plausible interactions when transferred to new scenes. Alternatively, motion transfer methods directly extract motion patterns from the observation video, yet motion-level features alone cannot encode rich contact dynamics, frequently leading to severe hand structural collapse and implausible contact layout. To address both limitations, we present EgoACT, a test-time framework for egocentric action transfer that operates directly on the denoising process of video diffusion models without requiring additional geometric estimators. EgoACT uses Velocity-guided Structure Anchoring to stabilize reference-consistent hand-object structure in the early denoising stage, and Sparse Correspondence Calibration to refine reliable local correspondences in the mid-to-late denoising stages. Together, these two components preserve transferable action semantics while improving temporal coherence and interaction realism. We further establish EgoActionBench, a benchmark for evaluating action preservation, visual quality, and hand-object plausibility across diverse egocentric manipulation scenarios. Experiments show that EgoACT generates more coherent and physically plausible interaction videos than strong baselines.
 
 </details>
 
@@ -249,7 +251,7 @@ If you use this code, please cite:
 ```bibtex
 @article{placeholder2026egoact,
   title={Decoupling Action from Egocentric Observation for World Simulation},
-  author={Placeholder Authors},
+  author={Ma, Yue and Song, Pengjie and Wang, Xinyu and He, Yi and Long, Zeqian and Zhan, Fangneng and Zhou, Kaichen and Liu, Hongyu and Wang, Hongfa and Li, Peihao and Huang, Haoyang and Duan, Nan and Chen, Qifeng},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2026}
 }
