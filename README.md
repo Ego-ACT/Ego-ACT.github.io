@@ -2,9 +2,9 @@
 <div align="center">
 <h2> EgoACT: Decoupling Action from Egocentric Observation for World Simulation</h2>
 
-Yue Ma<sup>1</sup>, Pengjie Song<sup>2</sup>, Xinyu Wang<sup>3</sup>, Yi He<sup>3</sup>, Zeqian Long<sup>4</sup>, Fangneng Zhan<sup>1</sup>, Kaichen Zhou<sup>5</sup>, Hongyu Liu<sup>1</sup>, Hongfa Wang<sup>3</sup>, Peihao Li<sup>6</sup>, Haoyang Huang<sup>7</sup>, Nan Duan<sup>7</sup>, Qifeng Chen<sup>1&dagger;</sup>
+Yue Ma<sup>1</sup>, Pengjie Song<sup>1</sup>, Xinyu Wang<sup>2</sup>, Yi He<sup>2</sup>, Zeqian Long<sup>3</sup>, Fangneng Zhan<sup>1</sup>, Kaichen Zhou<sup>4</sup>, Hongyu Liu<sup>1</sup>, Hongfa Wang<sup>5</sup>, Peihao Li<sup>5</sup>, Haoyang Huang<sup>5</sup>, Nan Duan<sup>5</sup>, Qifeng Chen<sup>1&dagger;</sup>
 
-<sup>1</sup>Hong Kong University of Science and Technology &nbsp; <sup>2</sup>Hunan University &nbsp; <sup>3</sup>Tsinghua University &nbsp; <sup>4</sup>Stanford University &nbsp; <sup>5</sup>Massachusetts Institute of Technology &nbsp; <sup>6</sup>Tongyi Lab, Alibaba Group &nbsp; <sup>7</sup>JD Explore Academy
+<sup>1</sup>Hong Kong University of Science and Technology &nbsp; <sup>2</sup>Tsinghua University &nbsp; <sup>3</sup>Stanford University &nbsp; <sup>4</sup>Massachusetts Institute of Technology &nbsp; <sup>5</sup>JD Explore Academy
 
 <sup>&dagger;</sup>Corresponding author
 
