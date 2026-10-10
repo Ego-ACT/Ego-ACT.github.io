@@ -100,7 +100,6 @@
             border-radius: 999px;
             margin-bottom: 32px;
             letter-spacing: 0.5px;
-            text-transform: uppercase;
             position: relative;
         }
 
@@ -121,6 +120,16 @@
             margin-left: 1px;
         }
 
+        .authors a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .authors a:hover {
+            color: var(--primary);
+        }
+
         .affiliations {
             max-width: var(--max-width);
             margin: 0 auto 36px;
@@ -132,6 +141,30 @@
         .affiliations sup {
             font-size: 0.7rem;
             margin-right: 1px;
+        }
+
+        /* ===== Institution Logos ===== */
+        .inst-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .inst-logos img {
+            height: 72px;
+            object-fit: contain;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            filter: grayscale(20%);
+        }
+
+        .inst-logos img:hover {
+            opacity: 1;
+            filter: grayscale(0%);
         }
 
         /* ===== Buttons ===== */
@@ -276,8 +309,8 @@
         /* ===== Video Result Cards ===== */
         .results-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
             margin-top: 32px;
         }
 
@@ -437,7 +470,7 @@
             .section h2,
             .video-container h2 { font-size: 1.4rem; }
 
-            .results-grid { grid-template-columns: 1fr; }
+            .results-grid { grid-template-columns: 1fr 1fr; }
 
             .authors { font-size: 0.92rem; }
 
@@ -456,28 +489,36 @@
     <div class="venue">NeurIPS 2026</div>
 
     <div class="authors">
-        Yue Ma<sup class="author-equal">1</sup>,
-        Pengjie Song<sup class="author-equal">1</sup>,
-        Xinyu Wang<sup class="author-equal">2</sup>,
-        Yi He<sup class="author-equal">2</sup>,
-        Zeqian Long<sup class="author-equal">3</sup>,
-        Fangneng Zhan<sup class="author-equal">1</sup>,
-        Kaichen Zhou<sup class="author-equal">4</sup>,
-        Hongyu Liu<sup class="author-equal">1</sup>,
-        Hongfa Wang<sup class="author-equal">5</sup>,
-        Peihao Li<sup class="author-equal">5</sup>,
-        Haoyang Huang<sup class="author-equal">5</sup>,
-        Nan Duan<sup class="author-equal">5</sup>,
-        Qifeng Chen<sup class="author-equal">1&dagger;</sup>
+        <a href="https://mayuelala.github.io/" target="_blank">Yue Ma</a><sup class="author-equal">1</sup>,
+        <a href="https://scholar.google.com/citations?user=EUmD5L4AAAAJ&hl=zh-CN" target="_blank">Pengjie Song</a><sup class="author-equal">1</sup>,
+        <a href="https://www.researchgate.net/profile/Xinyu-Wang-348" target="_blank">Xinyu Wang</a><sup class="author-equal">2</sup>,
+        <a href="https://github.com/Heey731" target="_blank">Yi He</a><sup class="author-equal">2</sup>,
+        <a href="https://zeqian-long.github.io/" target="_blank">Zeqian Long</a><sup class="author-equal">3</sup>,
+        <a href="https://fnzhan.com/" target="_blank">Fangneng Zhan</a><sup class="author-equal">1</sup>,
+        <a href="https://dblp.org/pid/275/7059.html" target="_blank">Kaichen Zhou</a><sup class="author-equal">4</sup>,
+        <a href="https://kumapowerliu.github.io/" target="_blank">Hongyu Liu</a><sup class="author-equal">1</sup>,
+        <a href="https://dblp.org/pid/91/330.html" target="_blank">Hongfa Wang</a><sup class="author-equal">5</sup>,
+        <a href="https://liphao99.github.io/" target="_blank">Peihao Li</a><sup class="author-equal">5</sup>,
+        <a href="https://hhyhhyhy.github.io/" target="_blank">Haoyang Huang</a><sup class="author-equal">5</sup>,
+        <a href="https://nanduan.github.io/" target="_blank">Nan Duan</a><sup class="author-equal">5</sup>,
+        <a href="https://cqf.io/" target="_blank">Qifeng Chen</a><sup class="author-equal">1&dagger;</sup>
     </div>
     <div class="affiliations">
-        <sup>1</sup>Hong Kong University of Science and Technology &nbsp;&nbsp;
+        <sup>1</sup>HKUST &nbsp;&nbsp;
         <sup>2</sup>Tsinghua University &nbsp;&nbsp;
         <sup>3</sup>Stanford University &nbsp;&nbsp;
-        <sup>4</sup>Massachusetts Institute of Technology &nbsp;&nbsp;
+        <sup>4</sup>MIT &nbsp;&nbsp;
         <sup>5</sup>JD Explore Academy
         <br>
         <span style="font-size: 0.78rem;"><sup>&dagger;</sup>Corresponding author</span>
+    </div>
+
+    <div class="inst-logos">
+        <img src="logos/hkust.png" alt="HKUST">
+        <img src="logos/tsinghua.png" alt="Tsinghua University">
+        <img src="logos/stanford.png" alt="Stanford University">
+        <img src="logos/mit.png" alt="MIT">
+        <img src="logos/jd.png" alt="JD Explore Academy">
     </div>
 
     <div class="buttons">
@@ -563,6 +604,15 @@
     </p>
     <div class="results-grid">
 
+        <div class="result-card" data-ref="VisualResults/ref/1.mp4" data-out="VisualResults/output/1,ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref69.mp4" data-out="VisualResults/output/ref69ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref99.mp4" data-out="VisualResults/output/ref99ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref127.mp4" data-out="VisualResults/output/ref127ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref141.mp4" data-out="VisualResults/output/ref141ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref142-blurred.mp4" data-out="VisualResults/output/ref142ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref143-blurred.mp4" data-out="VisualResults/output/ref143ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref144.mp4" data-out="VisualResults/output/ref144_2ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref145.mp4" data-out="VisualResults/output/ref145ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref151.mp4" data-out="VisualResults/output/ref151ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref152.mp4" data-out="VisualResults/output/ref152ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref170.mp4" data-out="VisualResults/output/ref170ours_2.mp4"></div>
@@ -570,8 +620,11 @@
         <div class="result-card" data-ref="VisualResults/ref/ref180-blurred.mp4" data-out="VisualResults/output/ref180ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref183-blurred.mp4" data-out="VisualResults/output/ref183_1ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref186-blurred.mp4" data-out="VisualResults/output/ref186_5ours.mp4"></div>
-        <div class="result-card" data-ref="VisualResults/ref/ref194.mp4" data-out="VisualResults/output/ref194ours_2.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref194.mp4" data-out="VisualResults/output/ref194ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref202-blurred.mp4" data-out="VisualResults/output/ref202_5ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref219-blurred.mp4" data-out="VisualResults/output/ref219_2ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref220-blurred.mp4" data-out="VisualResults/output/ref220ours.mp4"></div>
+        <div class="result-card" data-ref="VisualResults/ref/ref221-blurred.mp4" data-out="VisualResults/output/ref221_4ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref238.mp4" data-out="VisualResults/output/ref238_2ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref317.mp4" data-out="VisualResults/output/ref317_3ours.mp4"></div>
         <div class="result-card" data-ref="VisualResults/ref/ref334.mp4" data-out="VisualResults/output/ref334ours.mp4"></div>

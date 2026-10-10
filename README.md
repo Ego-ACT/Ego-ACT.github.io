@@ -2,9 +2,9 @@
 <div align="center">
 <h2> EgoACT: Decoupling Action from Egocentric Observation for World Simulation</h2>
 
-Yue Ma<sup>1</sup>, Pengjie Song<sup>1</sup>, Xinyu Wang<sup>2</sup>, Yi He<sup>2</sup>, Zeqian Long<sup>3</sup>, Fangneng Zhan<sup>1</sup>, Kaichen Zhou<sup>4</sup>, Hongyu Liu<sup>1</sup>, Hongfa Wang<sup>5</sup>, Peihao Li<sup>5</sup>, Haoyang Huang<sup>5</sup>, Nan Duan<sup>5</sup>, Qifeng Chen<sup>1&dagger;</sup>
+[Yue Ma](https://mayuelala.github.io/)<sup>1</sup>, [Pengjie Song](https://scholar.google.com/citations?user=EUmD5L4AAAAJ&hl=zh-CN)<sup>1</sup>, [Xinyu Wang](https://www.researchgate.net/profile/Xinyu-Wang-348)<sup>2</sup>, [Yi He](https://github.com/Heey731)<sup>2</sup>, [Zeqian Long](https://zeqian-long.github.io/)<sup>3</sup>, [Fangneng Zhan](https://fnzhan.com/)<sup>1</sup>, [Kaichen Zhou](https://dblp.org/pid/275/7059.html)<sup>4</sup>, [Hongyu Liu](https://kumapowerliu.github.io/)<sup>1</sup>, [Hongfa Wang](https://dblp.org/pid/91/330.html)<sup>5</sup>, [Peihao Li](https://liphao99.github.io/)<sup>5</sup>, [Haoyang Huang](https://hhyhhyhy.github.io/)<sup>5</sup>, [Nan Duan](https://nanduan.github.io/)<sup>5</sup>, [Qifeng Chen](https://cqf.io/)<sup>1&dagger;</sup>
 
-<sup>1</sup>Hong Kong University of Science and Technology &nbsp; <sup>2</sup>Tsinghua University &nbsp; <sup>3</sup>Stanford University &nbsp; <sup>4</sup>Massachusetts Institute of Technology &nbsp; <sup>5</sup>JD Explore Academy
+<sup>1</sup>HKUST &nbsp; <sup>2</sup>Tsinghua University &nbsp; <sup>3</sup>Stanford University &nbsp; <sup>4</sup>MIT &nbsp; <sup>5</sup>JD Explore Academy
 
 <sup>&dagger;</sup>Corresponding author
 
