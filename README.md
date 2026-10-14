@@ -10,7 +10,7 @@
 
 
 <a href='placeholder_arxiv_url'><img src='https://img.shields.io/badge/ArXiv-XXXX.XXXXX-red'></a>
-<a href='https://jie-ser.github.io/EgoACT/'>
+<a href='https://ego-act.github.io/'>
   <img src='https://img.shields.io/badge/Project-Page-Green'>
 </a>
 <!-- TODO: Replace with actual GitHub repo URL -->
